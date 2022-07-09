@@ -1,0 +1,113 @@
+body {
+    background-color: mediumspringgreen;
+}
+
+.page-header h1 {
+    font-size: 40px;
+    text-align: center;
+    padding: 10px 0;
+    background-color: yellow;
+    margin: 0 auto;
+    border-radius: 15px;
+    width: 200px;
+}
+
+.page-header {
+    margin-bottom: 40px;
+}
+main {
+    display: block;
+    background-color: darkcyan;
+    max-width: 80%;
+    margin: 15px auto;
+    border-radius: 15px;
+}
+.grid {
+
+    padding: 20px 0;
+  display: grid;
+  grid-gap: 10px 20px;
+  width: 820px;
+  grid-template-columns: 400px 400px;
+  grid-template-rows: 250px 250px;
+  margin: 30px auto;
+}
+
+
+
+.grid .base {
+  background-color:lavender ;
+  border-radius: 15px;
+}
+
+.base h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 30px 30px;
+}
+
+.base p {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0 30px;
+    font-size: 20px;
+    color:darkgrey;
+}
+
+.showBase {
+    text-align: center;
+    font-size: 100px;
+    width: auto;
+    min-height: 550px;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 15px;
+    background-color:lavender ;
+}
+
+.showBase h2 {
+    margin-bottom: 0;
+}
+.depositUnit {
+    text-align: center;
+    font-size: 50px;
+}
+
+.flexMoney {
+    display: flex;
+    justify-content: space-around;
+}
+
+.submitButton, .back {
+    background-color: yellow;
+    border-radius: 5px;
+    border: 0;
+    padding: 10px 20px;
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+.submitButton:hover {
+    background-color: #FFFF65;
+    box-shadow: 10px -5px mediumspringgreen;
+}
+
+
+.back {
+    background-color: aquamarine;
+}
+
+.back:hover {
+    box-shadow: 10px -5px #FFFF65;
+}
+
+.showBase p {
+    font-size: medium;
+}
+
+.showBase label {
+    font-size: 20px;
+}
+
+.showBase h6 {
+    padding: 0;
+    margin: 0;
+}

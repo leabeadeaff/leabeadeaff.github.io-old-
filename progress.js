@@ -9,6 +9,9 @@ let radiusBar = bar.getAttribute('r');
 input.oninput = function () {
     if (Number.isInteger(Number(input.value)) && input.value >= 0 && input.value <= 100) {
         bar.style.strokeDashoffset = (quickMath(radiusBar) - quickMath(radiusBar) * input.value / 100);
+        input.style.border = '1px solid black';
+    } else {
+        input.style.border = '1px solid red';
     }
 }
 

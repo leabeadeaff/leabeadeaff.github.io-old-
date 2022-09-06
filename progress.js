@@ -7,7 +7,7 @@ let bar = document.querySelector('.bar')
 let radiusBar = bar.getAttribute('r');
 
 input.oninput = function () {
-    if (Number.isInteger(Number(input.value)) && input.value >= 0 && input.value <= 100) {
+    if (!isNaN(input.value) && input.value >= 0 && input.value <= 100) {
         bar.style.strokeDashoffset = (quickMath(radiusBar) - quickMath(radiusBar) * input.value / 100);
         input.style.border = '1px solid black';
     } else {
@@ -16,7 +16,7 @@ input.oninput = function () {
 }
 
 animate.onclick = () => random() ? progressBlock.classList.toggle('start') : circle.classList.toggle('start');
-hide.onclick = () => progressBlock.style.display = 'none';
+hide.onclick = () => progressBlock.classList.add('visually-hidden');
 
 function quickMath (radius) {
     //2+2=4-1=3

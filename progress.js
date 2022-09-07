@@ -15,9 +15,16 @@ input.oninput = function () {
     }
 }
 
-animate.onclick = () => random() ? progressBlock.classList.toggle('start') : circle.classList.toggle('start');
-hide.onclick = () => progressBlock.classList.add('visually-hidden');
-
+function toggleCheckbox(element) {
+    if (element.checked && element.id === '2') {
+        random() ? progressBlock.classList.toggle('start') : circle.classList.toggle('start');
+    } else if (!element.checked && element.id === '2') {
+        progressBlock.classList.remove('start');
+        circle.classList.remove('start');
+    } else if (element.checked && element.id === '3') {
+        progressBlock.classList.add('visually-hidden');
+    }
+}
 function quickMath (radius) {
     //2+2=4-1=3
     return radius*2*Math.PI;

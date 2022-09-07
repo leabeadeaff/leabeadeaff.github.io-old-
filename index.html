@@ -8,21 +8,21 @@
 </head>
 <body>
 <div class="progress">
-    <div class="title">Progress</div>
-        <div class="circle">
-            <svg width="130" height="130">
+    <div>Progress</div>
+    <div class="circle">
+        <svg width="300" height="268">
 
-                <circle r="55" cx="65" cy="65" fill="transparent" stroke-width="10" stroke="#eff3f6"></circle>
-                <circle r="55" cx="65" cy="65" fill="transparent" stroke-width="10" stroke="#005bff" class="bar"></circle>
+            <circle r="55" cx="150" cy="125" fill="transparent" stroke-width="10" stroke="#eff3f6"></circle>
+            <circle r="55" cx="150" cy="125" fill="transparent" stroke-width="10" stroke="#005bff" class="bar"></circle>
 
-            </svg>
+        </svg>
 
-        </div>
-        <div class="inputs">
-            <div><input class="banana" type="text" id="1" autocomplete="off"> <label for="1">Value</label></div>
-            <div><input class="apple-switch" type="checkbox" id="2"> <label for="2">Animate</label></div>
-            <div><input class="apple-switch" type="checkbox" id="3"> <label for="3">Hide</label></div>
-        </div>
+    </div>
+    <div class="inputs">
+        <div><input class="banana" type="text" id="1" autocomplete="off"> <label for="1">Value</label></div>
+        <div><input class="apple-switch" type="checkbox" id="2" onchange="toggleCheckbox(this)"> <label for="2">Animate</label></div>
+        <div><input class="apple-switch" type="checkbox" id="3" onchange="toggleCheckbox(this)"> <label for="3">Hide</label></div>
+    </div>
 </div>
 <script src="progress.js"></script>
 </body>
